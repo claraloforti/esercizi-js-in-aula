@@ -5,15 +5,14 @@
 
 const numUno = parseFloat(prompt("Inserisci un numero!"));
 const numDue = parseFloat(prompt("Inserisci un altro numero!"));
-const equalNum = "nessuno perchè numeri inseriti sono uguali!";
 let risultato = "";
 
 if (numUno > numDue) {
-    risultato = numUno;
+    risultato = "Il numero maggiore è: " + numUno;
 } else if (numDue > numUno) {
-    risultato = numDue;
+    risultato = "Il numero maggiore è: " + numDue;
 } else {
-    risultato = equalNum;
+    risultato = "I numeri inseriti sono uguali!";
 }
 
-document.getElementById("result").textContent = "Il numero maggiore è: " + risultato;
+document.getElementById("result").textContent = risultato;
