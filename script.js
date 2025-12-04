@@ -66,4 +66,4 @@ for (let i = 1; i <= 6; i++) {
         numeri.push(num);
     }
 }
-console.log("I numeri dispari sono: " + numeri);
+console.log("I numeri dispari sono: " , numeri);
