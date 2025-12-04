@@ -20,6 +20,7 @@ document.getElementById("result").textContent = risultato;
 */
 
 
+
 /*
 JSnack 3
  Il software deve chiedere per 5 volte all’utente di inserire un numero. 
@@ -28,12 +29,13 @@ JSnack 3
  */
 
 //Con FOR
-let somma = 0;
+/*let somma = 0;
 for (let i = 1; i <= 5; i++) {
     let num = parseFloat(prompt("Inserisci il numero " + i));
     somma += num;
 }
 console.log("La somma dei 5 numeri inseriti è: " + somma);
+*/
 
 //Con WHILE
 /*
@@ -47,3 +49,21 @@ while (i <= 5) {
 }
 console.log("La somma dei 5 numeri inseriti è: " + somma);
 */
+
+
+
+/*
+Snack 5
+ Crea un array vuoto. 
+ Chiedi per 6 volte all’utente di inserire un numero, 
+ se è dispari inseriscilo nell’array
+*/
+
+let numeri = [];
+for (let i = 1; i <= 6; i++) {
+    let num = parseInt(prompt("Inserisci il numero " + i));
+    if (num % 2 !== 0) {
+        numeri.push(num);
+    }
+}
+console.log("I numeri dispari sono: " + numeri);
